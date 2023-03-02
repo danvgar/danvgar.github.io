@@ -27,32 +27,45 @@
 /* ==================== */
 
 /* Wireframing - Turn off before commit */
+
+body {
+    background-color: black;
+}
+
 body * {
     /* border: solid 1px black; */
     font-family: 'Raleway', 'Neue Montreal', serif;
+    color: white;
+    background: black;
 }
 
 #wrapper {
     height: 90%;
     width: 90%;
-    margin: 30px;
+    margin: 5%;
     position: fixed;
 }
 
 #content {
+    height: 90%;
+    width: 90%;
+    border: solid 1px white;
     position: fixed;
-    border: solid 1px black;
-    width: 95%;
-    height: 95%;
 }
 
-h1 {
-    margin: 30px;
-    font-size: 48px;
+header, footer {
+    height: 5%;
+    width: 100%;
+}
+
+h1, h2 {
+    margin: 5% 5% 2%;
+    font-size: 44px;
     font-weight: 200;
     text-transform: lowercase;
 }
 
-header, footer {
-    /* height: 30px; */
+h2 {
+    margin: 0 5%;
+    font-size: 14px;
 }
