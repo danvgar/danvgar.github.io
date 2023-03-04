@@ -102,3 +102,8 @@ h2+h2 {
         color: white;
     }
 }
+
+.socials {
+    float: right;
+    margin: 1%;
+}
