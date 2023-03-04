@@ -61,6 +61,10 @@ h1, h2 {
     text-transform: lowercase;
 }
 
+h2::before {
+    color:black;
+}
+
 h2 {
     margin: 0% 5%;
     font-size: 16px;
@@ -71,13 +75,30 @@ h2+h2 {
     transition-property: margin-right;
 }
 
-.delay {
-    color:black;
-    transition-property: color;
-    transition-duration: 2s;
-    transition-delay: 0.1s; 
+.textFadeIn {
+    animation-duration: 4s;
+    animation-name: textFadeIn;
 }
 
-.delay:hover {
-    color:white;
+.delay1s {
+    animation-delay: 1s;
+}
+
+.delay2s {
+    animation-delay: 2s;
+}
+
+.delay3s {
+    animation-delay: 3s;
+}
+
+
+@keyframes textFadeIn {
+    from {
+        color: black;
+    }
+    
+    to {
+        color: white;
+    }
 }
