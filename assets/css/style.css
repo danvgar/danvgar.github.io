@@ -25,12 +25,17 @@
 
 
 /* ==================== */
-/* GENERAL OR TEMPORARY */
+/* GENERAL */
 /* ==================== */
+
+* {
+    font-family: 'Raleway', 'Neue Montreal', serif;
+    font-weight: 100;
+    text-transform: lowercase;
+}
 
 body {
     background-color: black;
-    font-family: 'Raleway', 'Neue Montreal', serif;
     color: white;
     background: black;
 }
@@ -46,6 +51,11 @@ body {
     height: 90%;
     width: 90%;
     border: solid 1px white;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Position */
     position: fixed;
 }
 
@@ -57,17 +67,12 @@ header, footer {
 h1, h2 {
     margin: 5% 5% 2%;
     font-size: 44px;
-    font-weight: 100;
-    text-transform: lowercase;
-}
-
-h2::before {
-    color:black;
 }
 
 h2 {
     margin: 0% 5%;
     font-size: 16px;
+    color: black;
 }
 
 h2+h2 {
@@ -78,6 +83,7 @@ h2+h2 {
 .textFadeIn {
     animation-duration: 4s;
     animation-name: textFadeIn;
+    animation-fill-mode: forwards;
 }
 
 .delay1s {
@@ -89,9 +95,9 @@ h2+h2 {
 }
 
 .delay3s {
-    animation-delay: 3s;
+    animation-delay: 3.5s;
+    animation-duration: 5s;
 }
-
 
 @keyframes textFadeIn {
     from {
@@ -103,7 +109,44 @@ h2+h2 {
     }
 }
 
-.socials {
-    float: right;
-    margin: 1%;
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+/* */
+
+#socials {
+    margin: 1% 5%;
+    justify-content: space-between;
+    width: 125px;
+    align-self: flex-end;
+    justify-self: flex-start;
+    position: absolute;
+    right: 0;
+}
+
+#bio-list {
+    flex-direction: column;
+}
+
+#bio-list li {
+    margin: 1% 0%;
+}
+
+#bio-paragraph {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 1% 5%;
+    width: 200px;
 }
