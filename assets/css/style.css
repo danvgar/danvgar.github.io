@@ -121,7 +121,7 @@ ul {
 #directory {
     flex-direction: column;
     margin-left: 25%;
-    margin-top: 150px;
+    margin-top: 10%;
 }
 
 #directory li {
